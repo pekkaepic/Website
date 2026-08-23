@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work - Agency Creative Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rozha+One&family=Syne:wght@700;800&family=Teko:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body class="work-page">
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">
+      Agency
+      <span>Creative Studio</span>
+    </a>
+
+    <!-- Hamburger Toggle Button (Mobile Only) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <!-- Navigation Drawer -->
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="work.html" class="active">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Work Portfolio Grid -->
+  <main class="work-main">
+    <section class="portfolio-grid-section">
+      <div class="portfolio-grid">
+
+        <!-- Row 1: Appliance Campaign (Square Aspect Ratio) -->
+        <div class="portfolio-item square">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Heavy Duty Air Cooler Campaign" />
+        </div>
+        <div class="portfolio-item square">
+          <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80" alt="Energy Saver Appliance Campaign" />
+        </div>
+        <div class="portfolio-item square">
+          <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80" alt="Washing Machine Campaign" />
+        </div>
+
+        <!-- Row 2: Beauty & Skincare Campaign (Tall Portrait Aspect Ratio) -->
+        <div class="portfolio-item tall">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=120" alt="Ozone Wow Offer Skincare Ad" />
+        </div>
+        <div class="portfolio-item tall">
+          <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=120" alt="Gold Revolution Campaign" />
+        </div>
+        <div class="portfolio-item tall">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=120" alt="Glo Radiance Facial Range Campaign" />
+        </div>
+
+        <!-- Row 3: Real Estate Campaign (Tall Portrait Aspect Ratio) -->
+        <div class="portfolio-item tall">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=120" alt="Eldeco Real Estate Grow with Innocence Ad" />
+        </div>
+        <div class="portfolio-item tall">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=120" alt="Eldeco Real Estate Grow with Convenience Ad" />
+        </div>
+        <div class="portfolio-item tall">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=120" alt="Eldeco Real Estate Grow with Abundance Ad" />
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <p class="copyright">&copy; 2026 Agency Creative Studio. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Navigation Toggle Script -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+      hamburger.setAttribute('aria-expanded', !expanded);
+    });
+  </script>
+
+</body>
+</html>
