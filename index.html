@@ -95,7 +95,84 @@
 </article>
 </section>
 
+<div class="container">
+    
+    <!-- Hero Metric Ticker -->
+    <div class="ticker-bar">
+      <div class="ticker-track">
+        <div class="ticker-item"><span>⚡</span> 2-Week Average Turnaround</div>
+        <div class="ticker-item"><span>✦</span> 100% Direct Founder Access</div>
+        <div class="ticker-item"><span>⚡</span> Modern Next.js & Framer Stack</div>
+        <div class="ticker-item"><span>✦</span> Zero Long-Term Lock-ins</div>
+        <!-- Duplicated for smooth endless animation loop -->
+        <div class="ticker-item"><span>⚡</span> 2-Week Average Turnaround</div>
+        <div class="ticker-item"><span>✦</span> 100% Direct Founder Access</div>
+        <div class="ticker-item"><span>⚡</span> Modern Next.js & Framer Stack</div>
+        <div class="ticker-item"><span>✦</span> Zero Long-Term Lock-ins</div>
+      </div>
+    </div>
 
+    <!-- Why Us / Differentiation Section -->
+    <section>
+      <div class="section-tag">The Startup Advantage</div>
+      <h2 class="section-title">Why choose us over legacy agencies</h2>
+      
+      <div class="grid-container">
+        <div class="grid-card">
+          <div class="card-num">01</div>
+          <h3 class="card-title">Zero Account Managers</h3>
+          <p class="card-desc">You work directly with the senior designers and developers building your product. No middle-management telephone games or lost context.</p>
+        </div>
+
+        <div class="grid-card">
+          <div class="card-num">02</div>
+          <h3 class="card-title">Sprint-Based Velocity</h3>
+          <p class="card-desc">Traditional agencies take 12 weeks for wireframes. We ship production-ready digital experiences in rapid 2-to-4 week sprints.</p>
+        </div>
+
+        <div class="grid-card">
+          <div class="card-num">03</div>
+          <h3 class="card-title">Modern Stack & Systems</h3>
+          <p class="card-desc">No legacy page builders or bloated code bases. We build fast, scalable Figma design systems and ultra-clean Next.js/Framer web platforms.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-container">
+      <div class="section-tag">Got Questions?</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <button class="faq-question">How fast can we launch a project?</button>
+        <div class="faq-answer">
+          <p>Most landing page and branding sprints take 2–3 weeks from kickoff to launch. Full-scale web applications or complex design systems typically take 4–6 weeks depending on scope.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How does your pricing work?</button>
+        <div class="faq-answer">
+          <p>We offer project-based fixed pricing for defined scopes (no surprise invoice padding) or monthly retainers for ongoing UI/UX and development support.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Will I be able to edit the website myself after launch?</button>
+        <div class="faq-answer">
+          <p>Yes. We build with client autonomy in mind. You’ll receive full ownership of your assets, CMS integration for easy content updates, and a video walkthrough tutorial for your team.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What do you need from us to get started?</button>
+        <div class="faq-answer">
+          <p>Once we sign a project brief, we schedule a 45-minute kickoff call to collect your brand assets, existing copy/ideas, and target goals. We take it from there.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
 
 <!-- Section 3: Portfolio / Works -->
 <section class="portfolio-section reveal-on-scroll" id="work">
@@ -222,7 +299,6 @@
 
   </div>
 </section>
-
 <!-- Site Footer -->
 <footer class="site-footer">
   <div class="footer-bottom">
@@ -235,22 +311,7 @@
 </footer>
 
  <script src="script.js" type="text/javascript">
-    (function (l) {
-      if (l.search[1] === "/") {
-        var decoded = l.search
-          .slice(1)
-          .split("&")
-          .map(function (s) {
-            return s.replace(/~and~/g, "&");
-          })
-          .join("?");
-        window.history.replaceState(
-          null,
-          null,
-          l.pathname.slice(0, -1) + decoded + l.hash
-        );
-      }
-    })(window.location);
+    
   </script>
 </body>
 </html>
