@@ -988,3 +988,184 @@ a.detail-value:hover {
 .reveal-delay-1 { transition-delay: 0.1s; }
 .reveal-delay-2 { transition-delay: 0.25s; }
 .reveal-delay-3 { transition-delay: 0.4s; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 40px;
+}
+
+/* Section Titles & Labels */
+.section-tag {
+  color: var(--accent-lime);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  color: var(--text-light);
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: -0.5px;
+}
+
+/* Hindi Headline Styling Option */
+.section-title.lang-hi {
+  font-family: var(--font-hindi-display);
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+/* 1. Hero Ticker Section */
+.ticker-bar {
+  background: var(--card-bg);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 80px;
+}
+
+.ticker-track {
+  display: inline-flex;
+  gap: 32px;
+  animation: marquee 25s linear infinite;
+}
+
+.ticker-item {
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ticker-item span {
+  color: var(--accent-lime);
+  margin-right: 8px;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* 2. Differentiation Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 100px;
+}
+
+.grid-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 36px 28px;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.grid-card:hover {
+  border-color: var(--accent-lime);
+  transform: translateY(-4px);
+}
+
+.card-num {
+  font-family: var(--font-display);
+  color: var(--accent-lime);
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-family: var(--font-display);
+  color: var(--text-light);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.card-desc {
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+/* 3. FAQ Accordion */
+.faq-container {
+  margin-bottom: 80px;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-family: var(--font-display);
+  padding: 24px 0;
+  text-align: left;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.faq-question::after {
+  content: '+';
+  color: var(--accent-lime);
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.faq-item.active .faq-question::after {
+  content: '−';
+  color: var(--accent-yellow);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+.faq-answer p {
+  padding-bottom: 24px;
+}
